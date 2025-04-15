@@ -14,7 +14,7 @@ function Pip:update(snake)
     local cellX, cellY
 
     if self.menu:isBorder() then
-        cellX = math.random(2, 32 - 3)
+        cellX = math.random(3, 32 - 3)
         cellY = math.random(3, 20 - 3)
         temp.x = cellX * Utils.getLineWidth()
         temp.y = cellY * Utils.getLineHeight()
