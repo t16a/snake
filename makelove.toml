@@ -1,0 +1,11 @@
+name = "Snake - Another one"
+
+default_targets = ["win64"]
+build_directory = "bin"
+keep_game_directory = false 
+
+love_files = [
+    "+*",
+    "-*/.*",
+    "-./bin/*",
+]
