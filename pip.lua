@@ -9,7 +9,7 @@ function Pip:new(x, y, width, height, menu)
 end
 
 function Pip:update(snake)
-    local temp = { width = Utils.getLineWidth(), height = Utils.getLineHeight() }
+    local temp = {width = Utils.getLineWidth(), height = Utils.getLineHeight()}
     local overlaps = true
     local cellX, cellY
 
@@ -19,8 +19,8 @@ function Pip:update(snake)
         temp.x = cellX * Utils.getLineWidth()
         temp.y = cellY * Utils.getLineHeight()
     else
-        cellX = math.random(1, 32 - 1)
-        cellY = math.random(2, 20 - 1)
+        cellX = math.random(1, 32 - 2)
+        cellY = math.random(2, 20 - 2)
         temp.x = cellX * Utils.getLineWidth()
         temp.y = cellY * Utils.getLineHeight()
     end
